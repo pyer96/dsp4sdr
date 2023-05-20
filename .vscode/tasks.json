@@ -9,7 +9,9 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${workspaceFolder}/src/*cpp",
+                "${workspaceFolder}/src/*.cpp",
+                "${workspaceFolder}/libs/src/HackRF/*.cpp",
+                "${workspaceFolder}/utils/useful_code/*.cpp",
                 "-o",
                 "${workspaceFolder}/build/${fileBasenameNoExtension}"
             ],

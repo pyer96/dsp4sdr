@@ -3,12 +3,15 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/includes/**",
+                "${workspaceFolder}/libs/inc/**",
+                "${workspaceFolder}/utils/useful_code/**",
+                "${workspaceFolder}/utils/useful_code"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/g++",
             "cStandard": "c17",
-            "cppStandard": "c++14",
+            "cppStandard": "c++17",
             "intelliSenseMode": "linux-clang-x64"
         }
     ],

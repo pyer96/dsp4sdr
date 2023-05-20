@@ -6,7 +6,7 @@
             "name": "C/C++: g++ build and debug active file",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/${fileBasenameNoExtension}/${f}",
+            "program": "${workspaceFolder}/build/${fileBasenameNoExtension}",
             "args": [], // array of arguments to be passed to the program at runtime
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
