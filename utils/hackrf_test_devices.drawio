@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" modified="2023-05-20T21:54:29.331Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/113.0" etag="Q3IRTijUHBqbBPCYFW2s" version="21.3.2" type="device">
+  <diagram name="Page-1" id="y84jm4Afvlvt18sLCc27">
+    <mxGraphModel dx="1434" dy="822" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6O9nxcjeSk9uOWmsWtvJ-7" value="hackrf_info version: git-6738085&#xa;libhackrf version: git-6738085 (0.7)&#xa;Found HackRF&#xa;Index: 0&#xa;Serial number: 0000000000000000088869dc297d651b&#xa;Board ID Number: 2 (HackRF One)&#xa;Firmware Version: git-50c22aa0 (API:1.07)&#xa;Part ID Number: 0xa000cb3c 0x00584768" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="80" y="220" width="680" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="6O9nxcjeSk9uOWmsWtvJ-5" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B3B3B3;strokeWidth=2;" vertex="1" parent="6O9nxcjeSk9uOWmsWtvJ-7">
+          <mxGeometry width="660" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="6O9nxcjeSk9uOWmsWtvJ-1" value="&lt;div&gt;HackRF One&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ffffff&quot;&gt;1&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#000000;fontColor=#00CC00;fontStyle=1;fontFamily=Lucida Console;fontSize=15;" vertex="1" parent="6O9nxcjeSk9uOWmsWtvJ-7">
+          <mxGeometry x="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6O9nxcjeSk9uOWmsWtvJ-2" value="&lt;div&gt;HackRF One&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ffffff&quot;&gt;2&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#000000;fontColor=#00CC00;fontStyle=1;fontFamily=Lucida Console;fontSize=15;" vertex="1" parent="6O9nxcjeSk9uOWmsWtvJ-7">
+          <mxGeometry x="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6O9nxcjeSk9uOWmsWtvJ-3" value="&lt;div align=&quot;left&quot;&gt;&lt;font face=&quot;Lucida Console&quot;&gt;&lt;b&gt;hackrf_info version&lt;/b&gt;: git-6738085&lt;br&gt;&lt;b&gt;libhackrf version&lt;/b&gt;: git-6738085 (0.7)&lt;br&gt;&lt;b&gt;Serial number&lt;/b&gt;: 0000000000000000010961dc2a38bf4f&lt;br&gt;&lt;b&gt;Board ID Number&lt;/b&gt;: 2 (HackRF One)&lt;br&gt;&lt;b&gt;Firmware Version&lt;/b&gt;: git-50c22aa0 (API:1.07)&lt;br&gt;&lt;b&gt;Part ID Number&lt;/b&gt;: 0xa000cb3c 0x00584363&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="6O9nxcjeSk9uOWmsWtvJ-7">
+          <mxGeometry x="10" y="80" width="340" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="6O9nxcjeSk9uOWmsWtvJ-6" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" parent="6O9nxcjeSk9uOWmsWtvJ-7" source="6O9nxcjeSk9uOWmsWtvJ-5" target="6O9nxcjeSk9uOWmsWtvJ-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="110" y="50" as="sourcePoint" />
+            <mxPoint x="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6O9nxcjeSk9uOWmsWtvJ-8" value="&lt;b&gt;LAST UPDATE:&lt;/b&gt;&amp;nbsp; 20 may 2023 from release 2023.01.1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="6O9nxcjeSk9uOWmsWtvJ-7">
+          <mxGeometry x="10" y="330" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6O9nxcjeSk9uOWmsWtvJ-10" value="&lt;div align=&quot;left&quot;&gt;&lt;font face=&quot;Lucida Console&quot;&gt;&lt;b&gt;hackrf_info version&lt;/b&gt;: git-6738085&lt;br&gt;&lt;b&gt;libhackrf version&lt;/b&gt;: git-6738085 (0.7)&lt;br&gt;&lt;b&gt;Serial number&lt;/b&gt;: 0000000000000000088869dc297d651b&lt;br&gt;&lt;b&gt;Board ID Number&lt;/b&gt;: 2 (HackRF One)&lt;br&gt;&lt;b&gt;Firmware Version&lt;/b&gt;: git-50c22aa0 (API:1.07)&lt;br&gt;&lt;b&gt;Part ID Number&lt;/b&gt;: 0xa000cb3c 0x00584768&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="6O9nxcjeSk9uOWmsWtvJ-7">
+          <mxGeometry x="350" y="80" width="340" height="220" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
