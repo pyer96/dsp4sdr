@@ -10,11 +10,14 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "${workspaceFolder}/src/*.cpp",
+                
                 "${workspaceFolder}/libs/src/SDR/*.cpp",
                 "${workspaceFolder}/utils/useful_code/*.cpp",
                 "-o",
                 "${workspaceFolder}/build/${fileBasenameNoExtension}",
-                "-lhackrf"
+                "-lhackrf",
+                "-usb",
+                "-pthread"
             ],
             "options": {
                 "cwd": "${fileDirname}"
