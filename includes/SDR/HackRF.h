@@ -18,21 +18,21 @@ class HackRF {
      * @return void
     */
     void _initialize_libhackrf(); 
-/**
+    /**
      * @fn _exit_libhackrf() 
      * @brief This function should be called before exit and can be safely called multiple times.
      *          No other libhackrf functions should be called after it
      * @return void
     */
     void _exit_libhackrf(); 
-/**
- * @fn _handle_device_list
- * @brief This function checks how many hackrf devices are present in the system.
- *          If there is more than one device the user is prompted to choose which one
- *          to interface to. The private member <_device_ptr> is set
- * @return void
-*/
-void _handle_device_list();
+    /**
+     * @fn _handle_device_list
+     * @brief This function checks how many hackrf devices are present in the system.
+     *          If there is more than one device the user is prompted to choose which one
+     *          to interface to. The private member <_device_ptr> is set
+     * @return void
+    */
+    void _handle_device_list();
 
 
 };
