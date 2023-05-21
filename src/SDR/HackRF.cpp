@@ -1,5 +1,5 @@
-#include "../../inc/SDR/HackRF.h"
-#include "../../../utils/useful_code/colors.h"
+#include "../../includes/SDR/HackRF.h"
+#include "../../utils/useful_code/colors.h"
 #include <iostream>
 namespace sdr{
 
@@ -39,7 +39,7 @@ void HackRF::_handle_device_list(){
         int selection; 
         scanf("%d", &selection);
         if(selection>=0 && selection < dev_list->devicecount){
-            printf(green">" reset"SDR::HackRF # %s has been selected!\n", dev_list->serial_numbers[selection]);
+            printf(green">" reset"\tSDR::HackRF # %s has been selected!\n", dev_list->serial_numbers[selection]);
 
         }
         
