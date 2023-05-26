@@ -21,6 +21,7 @@ class LFSR {
     uint8_t                     _octets_needed;
     std::shared_ptr<uint8_t[]>   _register_state;       
     std::shared_ptr<uint8_t[]>   _register_feedbacks;  
+    
 
 };
 

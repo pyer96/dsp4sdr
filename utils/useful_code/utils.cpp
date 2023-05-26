@@ -16,7 +16,7 @@ void print_banner() {
 //      std::cout << line << std::endl;
       for(int i = 0; i<line.length(); i++){
         if(line[i]!= '_'){
-          printf(red"%c" green, line.c_str()[i]);
+          printf(yellow"%c" green, line.c_str()[i]);
         }else{
           printf("%c",line[i]);
         }
