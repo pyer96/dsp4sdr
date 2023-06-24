@@ -5,8 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/includes/**",
                 "${workspaceFolder}/libs/inc/**",
-                "${workspaceFolder}/utils/useful_code/**",
-                "${workspaceFolder}/utils/useful_code"
+                "${workspaceFolder}/utils/**",
+                "${workspaceFolder}/utils"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/g++",

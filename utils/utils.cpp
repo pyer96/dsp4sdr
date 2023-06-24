@@ -9,7 +9,7 @@ namespace utils{
 
 void print_banner() {
   std::string line;
-  std::ifstream banner("../utils/useful_code/dsp4sdr_banner");
+  std::ifstream banner("../resources/dsp4sdr_banner");
   if (banner.is_open()) {
     printf( GREEN"\n" );
     while (getline(banner, line)) {

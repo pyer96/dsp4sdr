@@ -12,7 +12,7 @@
                 "${workspaceFolder}/src/*.cpp",
                 
                 "${workspaceFolder}/src/SDR/*.cpp",
-                "${workspaceFolder}/utils/useful_code/*.cpp",
+                "${workspaceFolder}/utils/*.cpp",
                 "-o",
                 "${workspaceFolder}/build/main",
                 "-lhackrf",
