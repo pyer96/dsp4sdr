@@ -15,7 +15,7 @@ class Packet{
         return len_; 
     };
 
-    void resize(uint32_t uhduwhd);
+    void shrink(uint32_t new_size);
 
     static std::shared_ptr<Packet> make_packet(uint32_t pkt_length); 
 

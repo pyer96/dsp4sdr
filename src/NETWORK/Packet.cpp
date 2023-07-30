@@ -8,7 +8,7 @@ Packet::Packet(uint32_t initial_len){
     len_  = initial_len;
 }
 
-void Packet::resize(uint32_t l){
+void Packet::shrink(uint32_t l){
     if(l > len_) return;
 
     len_ = l;
