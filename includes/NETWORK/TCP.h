@@ -12,8 +12,8 @@ class TCP{
 
     bool startServer(uint16_t port);
     bool acceptConnection();
-    bool sendData(const std::shared_ptr<Packet>);
-    std::shared_ptr<Packet> receiveData(); 
+    bool sendPacket(const std::shared_ptr<Packet>);
+    std::shared_ptr<Packet> receivePacket(); 
 
     void closeConnection();
     void stopServer();

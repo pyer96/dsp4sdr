@@ -59,7 +59,7 @@ bool TCP::acceptConnection(){
         return true;
 }
 
-bool TCP::sendData(const std::shared_ptr<Packet> pkt){
+bool TCP::sendPacket(const std::shared_ptr<Packet> pkt){
      ssize_t bytesSent = send(clientSocket_, pkt->data(), pkt->len(), 0);
         if (bytesSent == -1) {
             std::cerr << "Error sending data." << std::endl;
@@ -68,7 +68,7 @@ bool TCP::sendData(const std::shared_ptr<Packet> pkt){
     return true;
 }
 
-std::shared_ptr<Packet> TCP::receiveData(){
+std::shared_ptr<Packet> TCP::receivePacket(){
     auto pkt = Packet::make_packet(TCP_PKT_SIZE);
     ssize_t bytesRead = recv(clientSocket_, pkt->data(), pkt->len(), 0);
     if (bytesRead <= 0) {
