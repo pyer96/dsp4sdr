@@ -14,5 +14,9 @@ void Packet::resize(uint32_t l){
     len_ = l;
 }
 
+std::shared_ptr<Packet> Packet::make_packet(uint32_t pkt_len){
+    return std::make_shared<Packet>(pkt_len);
+}
+
 
 }//namespace network

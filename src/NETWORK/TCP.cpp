@@ -4,7 +4,8 @@
 #include <cstring>
 #include <unistd.h>
 #include <sys/socket.h>
-#include <netinet/in.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
 
 namespace network{
 
@@ -15,7 +16,7 @@ TCP::TCP(){
 
 
 bool TCP::startServer(uint16_t port){
-    serverSocket_ = socket(AF_INET, SOCK_STREAM, 0);
+        serverSocket_ = socket(AF_INET, SOCK_STREAM, 0);
         if (serverSocket_ == -1) {
             std::cerr << "Error creating socket." << std::endl;
             return false;
@@ -58,24 +59,23 @@ bool TCP::acceptConnection(){
         return true;
 }
 
-bool TCP::sendData(const std::string& data){
-     ssize_t bytesSent = send(clientSocket_, data.c_str(), data.size(), 0);
+bool TCP::sendData(const std::shared_ptr<Packet> pkt){
+     ssize_t bytesSent = send(clientSocket_, pkt->data(), pkt->len(), 0);
         if (bytesSent == -1) {
             std::cerr << "Error sending data." << std::endl;
             return false;
         }
-        return true;
+    return true;
 }
 
-std::string TCP::receiveData(){
-    char buffer[1024];
-    ssize_t bytesRead = recv(clientSocket_, buffer, sizeof(buffer), 0);
+std::shared_ptr<Packet> TCP::receiveData(){
+    auto pkt = Packet::make_packet(TCP_PKT_SIZE);
+    ssize_t bytesRead = recv(clientSocket_, pkt->data(), pkt->len(), 0);
     if (bytesRead <= 0) {
         std::cerr << "Error receiving data." << std::endl;
-        return "";
+        return nullptr;
     }
-
-    return std::string(buffer, bytesRead);
+    return pkt;
 }
 
 void TCP::closeConnection() {

@@ -1,7 +1,9 @@
 #include <cstdint>
+#include "Packet.h"
 
 namespace network{
 
+#define TCP_PKT_SIZE 4096
 
 class TCP{
     public:
@@ -10,8 +12,8 @@ class TCP{
 
     bool startServer(uint16_t port);
     bool acceptConnection();
-    bool sendData(const std::string& data);
-    std::string receiveData(); 
+    bool sendData(const std::shared_ptr<Packet>);
+    std::shared_ptr<Packet> receiveData(); 
 
     void closeConnection();
     void stopServer();
